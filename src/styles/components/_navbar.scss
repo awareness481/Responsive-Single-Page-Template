@@ -1,0 +1,77 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Button */
+
+.menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #333;
+
+    &:hover,
+    &:focus {
+        color: #c00;
+    }
+}
+
+/* Offscreen menu */
+
+.main-menu {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    transition: left 0.3s ease,
+        box-shadow 0.3s ease;
+    z-index: 999;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 2.5em 0 0;
+        -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+        -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+             box-shadow: -8px 0 8px rgba(0,0,0,.5);
+        min-height: 100%;
+        width: 200px;
+        background: #1a1a1a;
+    }
+
+    a {
+        display: block;
+        padding: .75em 15px;
+        line-height: 1em;
+        font-size: 1em;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #383838;
+
+        &:hover,
+        &:focus {
+            background: #333;
+            text-decoration: underline;
+        }
+    }
+
+    li:first-child a {
+        border-top: 1px solid #383838;
+    }
+
+    .menu-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

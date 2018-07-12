@@ -8,49 +8,51 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href='#main-menu'
-            class='menu-toggle'
-            role='button'
-            id='main-menu-toggle'
-            aria-expanded='false'
-            aria-controls='main-menu'
-            aria-label='Open main menu'>
-            <span class='sr-only'>Open main menu</span>
-            <span class='fa fa-bars' aria-hidden="true"></span>
-        </a>
-        <h1 class='logo'>Orange</h1>
-        <nav id='main-menu' 
-            class='main-menu'
-            role='navigation'
-            aria-expanded="false"
-            aria-label='Main Menu'>
-            <a href='#main-menu-toggle' 
-                class='menu-close'
+    <div class='page first'>
+        <header>
+            <a href='#main-menu'
+                class='menu-toggle'
                 role='button'
-                id='main-menu-close'
+                id='main-menu-toggle'
                 aria-expanded='false'
                 aria-controls='main-menu'
-                aria-label='Close main menu'>
-                <span class='sr-only'>Close main menu</span>
-                <span class='fas fa-times' aria-hidden='true'></span>
+                aria-label='Open main menu'>
+                <span class='sr-only'>Open main menu</span>
+                <span class='fa fa-bars' aria-hidden="true"></span>
             </a>
-            <ul>
-                <li><a href='#'>Work</a></li>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Services</a></li>
-                <li><a href='#'>Blog</a></li>
-                <li><a href='#'>Tools</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#main-menu-toggle"
-            class="backdrop"
-            tabindex="-1"
-            aria-hidden="true"
-            hidden>
-        </a>
-    </header>
+            <h1 class='logo'>Orange</h1>
+            <nav id='main-menu' 
+                class='main-menu'
+                role='navigation'
+                aria-expanded="false"
+                aria-label='Main Menu'>
+                <a href='#main-menu-toggle' 
+                    class='menu-close'
+                    role='button'
+                    id='main-menu-close'
+                    aria-expanded='false'
+                    aria-controls='main-menu'
+                    aria-label='Close main menu'>
+                    <span class='sr-only'>Close main menu</span>
+                    <span class='fas fa-times' aria-hidden='true'></span>
+                </a>
+                <ul>
+                    <li><a href='#'>Work</a></li>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Blog</a></li>
+                    <li><a href='#'>Tools</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle"
+                class="backdrop"
+                tabindex="-1"
+                aria-hidden="true"
+                hidden>
+            </a>
+        </header>
+    </div>
 
     <script src="../bundle.js"></script>
 </body>

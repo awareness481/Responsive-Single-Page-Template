@@ -9,6 +9,11 @@
     border: 0;
 }
 
+.menu-toggle,
+.logo {
+    position: relative;
+}
+
 /* Button */
 
 .menu-toggle {
@@ -118,10 +123,6 @@
 
 @media screen and (min-width: 768px) {
     /* Undo positioning of off-canvas menu */
-    .logo {
-        position: relative;
-    }
-
     .main-menu {
         position: relative;
         left: auto;

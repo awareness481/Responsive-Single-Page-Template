@@ -63,6 +63,39 @@
             background: #333;
             text-decoration: underline;
         }
+
+    }
+    
+
+    &:target {
+        left: 0;
+        outline: none;
+        -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        box-shadow: 3px 0 12px rgba(0,0,0,.25);
+        
+        .menu-close {
+            z-index: 1001;
+        }
+
+        ul {
+            position: relative;
+            z-index: 1000;
+        }
+
+        + .backdrop {
+            position: absolute;
+            display: block;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 998;
+            background: #000;
+            background: rgba(0,0,0,.85);
+            cursor: default;
+        }
     }
 
     li:first-child a {
@@ -75,3 +108,10 @@
         top: 0;
     }
 }
+
+@supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop {
+      position: fixed;
+    }
+  }

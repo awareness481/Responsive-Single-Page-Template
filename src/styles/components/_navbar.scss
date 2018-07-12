@@ -114,4 +114,42 @@
     .main-menu:target + .backdrop {
       position: fixed;
     }
-  }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toggle,
+    .main-menu,
+    .menu-close {
+        display: none;
+    }
+
+    /* Undo positioning of off-canvas menu */
+    .main-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+
+        ul {
+            display: flex;
+        
+            /* Undo off-canvas styling */
+            padding: 0;
+            -webkit-box-shadow: none;
+               -moz-box-shadow: none;
+                    box-shadow: none;
+            height: auto;
+            width: auto;
+            background: none;
+        }
+        
+        a {
+            border: 0 !important; /* Remove borders from off-canvas styling */
+        }
+
+        &:hover,
+        &:focus {
+            background: none;
+        }
+    }
+}

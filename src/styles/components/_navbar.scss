@@ -117,13 +117,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    .menu-toggle,
-    .main-menu,
-    .menu-close {
-        display: none;
+    /* Undo positioning of off-canvas menu */
+    .logo {
+        position: relative;
     }
 
-    /* Undo positioning of off-canvas menu */
     .main-menu {
         position: relative;
         left: auto;
@@ -150,6 +148,10 @@
         &:hover,
         &:focus {
             background: none;
+        }
+
+        .menu-close {
+            display: none;
         }
     }
 }

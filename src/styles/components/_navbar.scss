@@ -11,7 +11,16 @@
 
 .menu-toggle,
 .logo {
+    color: $red;
+}
+
+.logo {
+    display: inline-block;
+}
+
+header {
     position: relative;
+    background-color: #1a1a1a;
 }
 
 /* Button */
@@ -21,7 +30,6 @@
     padding: .75em 15px;
     line-height: 1em;
     font-size: 1em;
-    color: #333;
 
     &:hover,
     &:focus {
@@ -125,6 +133,11 @@
     .menu-toggle {
         visibility: hidden;
         padding: 0;
+    }
+
+    header {
+        background-color: transparent;
+        position: initial;
     }
 
     /* Undo positioning of off-canvas menu */

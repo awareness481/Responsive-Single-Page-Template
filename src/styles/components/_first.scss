@@ -74,3 +74,29 @@
       }
     }
 }
+
+@media screen and (min-width: 768px) {
+  .main-text {
+    h2 {
+      font-size: $xl-size + $m-size;
+    }
+
+    h4 {
+      font-size: $l-size;
+    }
+
+    .email-form {
+      width: 40%;
+      margin: 0 auto;
+      
+      .email {
+        flex-grow: 2.8;
+        font-size: $m-size + 0.5rem;
+      }
+
+      .join {
+        font-size: $m-size;
+      }
+    }
+  }
+}

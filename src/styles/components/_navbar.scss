@@ -11,29 +11,35 @@
 
 .menu-toggle,
 .logo {
-    color: $red;
+    color: white;
+    font-size: $l-size;
 }
 
 .logo {
+    font-weight: 700;
     display: inline-block;
+    text-transform: uppercase;
+    padding: 0 0 0 15px;
 }
 
 header {
     position: relative;
-    background-color: #1a1a1a;
 }
 
 /* Button */
 
 .menu-toggle {
-    display: inline-block;
     padding: .75em 15px;
     line-height: 1em;
-    font-size: 1em;
+
+    float: right;
+    &:after {
+        clear: both;
+    }
 
     &:hover,
     &:focus {
-        color: #c00;
+        outline: none;
     }
 }
 
@@ -60,6 +66,7 @@ header {
         min-height: 100%;
         width: 200px;
         background: #1a1a1a;
+        font-size: $m-size;
     }
 
     a {
@@ -119,6 +126,8 @@ header {
         position: absolute;
         right: 0;
         top: 0;
+        font-size: $m-size;
+        border: none;
     }
 }
 

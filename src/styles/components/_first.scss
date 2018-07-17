@@ -37,6 +37,10 @@
       font-size: $m-size;
     }
 
+    h2, h4 {
+      font-weight: 400;
+    }
+
     .email-form {
       display: flex;
       flex-wrap: nowrap;

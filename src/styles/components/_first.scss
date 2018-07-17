@@ -19,8 +19,9 @@
 }
 
 .main-text {
-    div {
-      width: 80%;
+    .div-center {
+      color: white;
+      width: 90%;
       text-align: center;
       position: absolute;
       top: 50%;
@@ -37,12 +38,35 @@
     }
 
     .email-form {
-      font-size: $m-size;
       display: flex;
       flex-wrap: nowrap;
-    }
+      height: 50px;
 
-    .join {
-      font-size: $m-size;
+      .email {
+        font-size: $l-size;
+        border: 1px solid white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        outline: none;
+        width: 100%;
+        padding-left: 25px;
+      }
+
+      .join {
+        font-size: $m-size + .5rem;
+        outline: none;
+        border: 1px solid;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: #f13977;
+        border-color: #f13977;
+        color: white;
+        display: inline-block;
+
+        .join-text {
+    
+          text-transform: uppercase;
+        }
+      }
     }
 }

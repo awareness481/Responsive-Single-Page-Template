@@ -9,3 +9,8 @@ html, body {
 .page {
     height: 100vh;
 }
+
+.flex-same-width {
+    flex-grow: 1;
+    flex-basis: 0;
+}

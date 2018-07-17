@@ -147,6 +147,13 @@ header {
     header {
         background-color: transparent;
         position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            position: relative;
+        }
     }
 
     /* Undo positioning of off-canvas menu */

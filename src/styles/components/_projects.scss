@@ -13,6 +13,16 @@
         margin: 0 auto;
         line-height: $l-size;
     }
+}
 
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    .project-thumbnail {
+        height: 37vh;
+        width: 90%;
+        visibility: hidden;
+    }
 }

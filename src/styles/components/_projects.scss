@@ -1,0 +1,18 @@
+.projects {
+    height: 20vh;
+
+    h2 {
+        font-size: $l-size;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    p {
+        font-size: $m-size;
+        width: 80%;
+        margin: 0 auto;
+        line-height: $l-size;
+    }
+
+
+}

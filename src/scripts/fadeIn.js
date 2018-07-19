@@ -44,7 +44,25 @@ export function animationTrigger() {
           }
         }
       }
-      
+    }
+    // END Second page
+
+    
+    if (window.scrollY >= window.innerHeight * 4.5) {
+      const clients  = document.getElementById('clients-title');
+      const testimony1 = document.getElementById('testimony-1');
+      clients.classList.add('fadeOne');
+      testimony1.classList.add('fadeTwo');
+
+      if (window.scrollY >= window.innerHeight * 5.5) {
+        const testimony2 = document.getElementById('testimony-2');
+        testimony2.classList.add('fadeTwo');
+
+        if (window.scrollY >= window.innerHeight * 6) {
+          const testimony3 = document.getElementById('testimony-3');
+          testimony3.classList.add('fadeThree');
+        }
+      }
     }
   })
 }

@@ -1,0 +1,110 @@
+.clients {
+    background: 
+    /* top, transparent red, faked with gradient */
+    /* Thank you css-tricks :) https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    linear-gradient(
+      rgba(0, 0, 0, .5), 
+      rgba(0, 0, 0, .5)
+    ),
+    /* bottom, image */
+    url('https://images.unsplash.com/photo-1464029902023-f42eba355bde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5aaa65793c7b9e05accddb9c5e98b668&auto=format&fit=crop&w=750&q=80');
+    position: relative;
+    height: 100%;
+
+
+    .testimony {
+        position: relative;
+        background: #fff;
+        width: 90%;
+        color: $gray;
+        font-size: $m-size + 0.4rem;
+        line-height: $m-size + $s-size;
+        margin: 0 auto;
+        border: 4px solid #fff;
+        border-radius: 4px;
+
+        .quote {
+            display: inline-block;
+            border-radius: 50%;
+            width: $quote;
+            height: $quote;
+            line-height: $quote;
+            background-color: $red;
+            text-align: center;
+            position: absolute;
+            top: -$l-size;
+            left: $m-size;
+    
+            .fa-quote-right {
+                font-size: $m-size + $s-size;
+                color: white;
+            }
+        }
+
+        .testimony-text {
+            padding: $l-size 0 $m-size 0;
+        }
+    }
+    .testimony:after, .testimony:before {
+        top: 100%;
+        left: 10%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .testimony:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #fff;
+        border-width: $m-size;
+        margin-left: $m-size;
+    }
+    .testimony:before {
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #fff;
+        border-width: $m-size;
+        margin-left: $m-size;
+    }
+
+    .testimony-name {
+        position: relative;
+        color: white;
+        padding: $m-size;
+        margin-bottom: 7%;
+        
+        span {
+            display: inline-block;
+        }
+
+        .author {
+            font-size: $m-size + 0.5rem;
+            margin-right: 0.8rem;
+        }
+        .website {
+            font-size: $m-size + 0.3rem;
+        }
+        .author-job {
+            font-size: $m-size - 0.3rem;
+        }
+        .author-subtext {
+            color: #c2c3c4;
+        }
+    }
+}
+
+.clients-headline {
+    height: 20vh;
+    position: relative;
+    text-align: center;
+
+    h2 {
+        width: 100%;
+        color: white;
+        font-size: $l-size;
+        font-weight: 200;
+        position: absolute;
+    }
+}

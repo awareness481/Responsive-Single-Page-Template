@@ -7,13 +7,7 @@
         text-align: center;
     }
 
-    p {
-        font-size: $m-size;
-        color: $gray;
-        width: 80%;
-        margin: 0 auto;
-        line-height: $l-size;
-    }
+    p { @include paragraph() };
 }
 
 .projects-list {

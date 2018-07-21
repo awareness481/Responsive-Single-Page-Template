@@ -71,7 +71,6 @@
 
     .testimony-name {
         position: relative;
-        color: white;
         padding: $m-size;
         margin-bottom: 7%;
         
@@ -80,6 +79,7 @@
         }
 
         .author {
+            color: white;
             font-size: $m-size + 0.5rem;
             margin-right: 0.8rem;
         }
@@ -89,22 +89,10 @@
         .author-job {
             font-size: $m-size - 0.3rem;
         }
-        .author-subtext {
-            color: #c2c3c4;
+        .author-job, .website {
+            color: #b3b4b4;
         }
     }
 }
 
-.clients-headline {
-    height: 20vh;
-    position: relative;
-    text-align: center;
-
-    h2 {
-        width: 100%;
-        color: white;
-        font-size: $l-size;
-        font-weight: 200;
-        position: absolute;
-    }
-}
+.clients-headline { @include font-color(white) };

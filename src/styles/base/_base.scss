@@ -20,3 +20,26 @@ body {
     flex-grow: 1;
     flex-basis: 0;
 }
+
+@mixin font-color($color) {
+    height: 20vh;
+    position: relative;
+    
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        color: $color;
+        font-size: $l-size;
+        font-weight: 200;
+        position: absolute;
+    }
+}
+
+@mixin paragraph() {
+    font-size: $m-size;
+    color: $gray;
+    width: 80%;
+    margin: 0 auto;
+    line-height: $l-size;
+}

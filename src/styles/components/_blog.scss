@@ -1,0 +1,9 @@
+.blog-headline { @include font-color(black) };
+.blog-headline p { @include paragraph() };
+
+.blog-headline {
+    h2 {
+        position: relative;
+    }
+    
+}

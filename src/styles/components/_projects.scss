@@ -7,7 +7,7 @@
         text-align: center;
     }
 
-    p { @include paragraph() };
+    p { @include paragraph($l-size) };
 }
 
 .projects-list {

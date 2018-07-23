@@ -16,7 +16,7 @@
             position: relative;
         }
 
-        .post { @include paragraph() };
+        .post { @include paragraph($m-size + 1rem) };
     }
 }
 
@@ -36,7 +36,7 @@
         overflow: hidden;
     }
 
-    .article-summary { @include paragraph() };
+    .article-summary { @include paragraph($m-size + 1rem) };
 
     .article-summary {
         font-size: $m-size;

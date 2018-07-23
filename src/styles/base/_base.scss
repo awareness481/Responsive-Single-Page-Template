@@ -36,10 +36,10 @@ body {
     }
 }
 
-@mixin paragraph() {
+@mixin paragraph($line-height) {
     font-size: $m-size;
     color: $gray;
     width: 80%;
     margin: 0 auto;
-    line-height: $l-size;
+    line-height: $line-height;
 }

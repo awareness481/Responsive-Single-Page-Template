@@ -1,23 +1,31 @@
-.blog-headline { @include font-color(black) };
-.blog-headline p { @include paragraph() };
+// BLOG Introduction Styles
 
-.blog-headline {
-    h2 {
-        position: relative;
-    }
-    
-}
+
 
 .blog {
-    width: 90%;
-    margin: 0 auto;
-}
+    background-color: rgba(0,0,0, .06);
 
-.article-container {
+    .blog-headline { @include font-color(black) };
+
     .blog-headline {
         position: relative;
         height: 100%;
+        margin-bottom: 10%;
+
+        h2 {
+            position: relative;
+        }
+
+        .post { @include paragraph() };
     }
+}
+
+// Article Styles
+
+.article-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
 
     .article-image {
         display: flex;
@@ -25,5 +33,39 @@
         max-width: 100%;
         margin: 0 auto;
         height: auto;
+        overflow: hidden;
+    }
+
+    .article-summary { @include paragraph() };
+
+    .article-summary {
+        font-size: $m-size;
+        color: $gray;
+        margin: 5% 10%;
+    }
+
+    .read-more {
+        font-size: $m-size;
+        margin: 5% 0 5% 10%;
+
+        border: 2px solid $lred;
+        border-radius: 30px;
+        padding: $s-size $l-size;
+        background-color: $lred;
+        color: white;
+    }
+
+    .blog-article {
+        .article-title {
+            font-size: $m-size + 0.5rem;
+            margin: 10% 7%;
+            font-weight: 400;
+        }
+
+        .row-space-inbetween {
+            font-size: $m-size;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

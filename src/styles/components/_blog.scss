@@ -39,20 +39,16 @@
     .article-summary { @include paragraph($m-size + 1rem) };
 
     .article-summary {
-        font-size: $m-size;
+        font-size: $s-size;
         color: $gray;
         margin: 5% 10%;
     }
 
-    .read-more {
-        font-size: $m-size;
-        margin: 2% 0 10% 10%;
+    .read-more{ @include red-button()};
 
-        border: 2px solid $lred;
-        border-radius: 30px;
+    .read-more {
+        margin: 2% 0 10% 10%;
         padding: $s-size $l-size;
-        background-color: $lred;
-        color: white;
     }
 
     .blog-article {

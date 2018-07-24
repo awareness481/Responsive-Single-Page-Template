@@ -43,3 +43,11 @@ body {
     margin: 0 auto;
     line-height: $line-height;
 }
+
+@mixin red-button() {
+    font-size: $m-size;
+    border: 2px solid $lred;
+    border-radius: 30px;
+    background-color: $lred;
+    color: white;
+}

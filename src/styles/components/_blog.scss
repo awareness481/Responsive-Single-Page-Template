@@ -9,7 +9,6 @@
 
     .blog-headline {
         position: relative;
-        height: 100%;
         margin-bottom: 10%;
 
         h2 {
@@ -91,4 +90,48 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        width: 100%;
+
+        .blog-headline {
+            margin-bottom: 5%;
+
+            h2 {
+                font-size: $xl-size;
+            }
+            .post {
+                width: 50%;
+            }
+        }
+    }
+
+    .articles {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        .article-container {
+            flex: 1;
+            max-width: 25%;
+            margin: 0 0 10% 0;
+
+            .article-image {
+                display: inline-block;
+                max-width: 100%;
+            }
+
+            .article-title {
+                font-weight: 200;
+            }
+
+            .article-summary {
+                font-size: $m-size;
+            }
+        }
+    }
+
 }

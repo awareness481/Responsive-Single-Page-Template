@@ -1,0 +1,45 @@
+.footer {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .06);
+
+    .list-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        ul {
+            list-style-type: none;
+            flex: 1;
+            font-size: $m-size;
+            max-width: 35%;
+    
+            li {
+                white-space: nowrap;
+                border-bottom: 2px dotted rgba(0, 0, 0, .2);
+                padding: 5px 0;
+            }
+        }
+    }
+
+    .footer-details {
+
+        h4 {
+            font-size: $m-size + 0.5rem;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        p { @include paragraph($m-size + 1rem)  };
+
+        a {
+            font-size: $m-size;
+            color: $lred;
+        }
+
+        h4, p, a {
+            margin: 5% 0 0 5%;
+        }
+        
+    }
+}

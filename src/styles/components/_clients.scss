@@ -11,10 +11,9 @@
     position: relative;
     height: 100%;
 
-
-    .testimony {
-        position: relative;
+    .testimony-bg {
         background: #fff;
+        position: relative;
         width: 90%;
         color: $gray;
         font-size: $m-size + 0.4rem;
@@ -45,7 +44,7 @@
             padding: $l-size 0 $m-size 0;
         }
     }
-    .testimony:after, .testimony:before {
+    .testimony-bg:after, .testimony-bg:before {
         top: 100%;
         left: 10%;
         border: solid transparent;
@@ -56,13 +55,13 @@
         pointer-events: none;
     }
     
-    .testimony:after {
+    .testimony-bg:after {
         border-color: rgba(255, 255, 255, 0);
         border-top-color: #fff;
         border-width: $m-size;
         margin-left: $m-size;
     }
-    .testimony:before {
+    .testimony-bg:before {
         border-color: rgba(255, 255, 255, 0);
         border-top-color: #fff;
         border-width: $m-size;
@@ -73,7 +72,7 @@
         position: relative;
         padding: $m-size;
         margin-bottom: 7%;
-        
+    
         span {
             display: inline-block;
         }
@@ -96,3 +95,22 @@
 }
 
 .clients-headline { @include font-color(white) };
+
+@media screen and (min-width: 768px) {
+    .clients {
+        background-size: cover;
+        height: 100vh;
+
+        .testimonies-container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+
+            .testimony {
+                max-width: 30%;
+            }
+        }
+    }
+}

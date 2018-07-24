@@ -14,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 25vh;
 
     .project-thumbnail {
         height: 45vh;
@@ -21,7 +22,7 @@
         width: 90%;
         position: relative;
         visibility: hidden;
-        background-size: 100%;
+        background-size: cover;
         transition-property: all;
         transition-timing-function: ease-in-out;
         transition-duration: 1s;
@@ -55,7 +56,6 @@
     }
 
     .proj-1 {
-        margin-top: 25vh;
         background-image: url('https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31baf18a7d66403cace2536589064759&auto=format&fit=crop&w=350&h=300&q=80');
     }
 
@@ -77,5 +77,35 @@
 
     .proj-6 {
         background-image: url('https://images.unsplash.com/photo-1465411261564-1308080c8010?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba16cee605f2329e8eaaff6ab11de501&auto=format&fit=crop&w=350&h=300&q=80');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        h2 {
+            font-size: $xl-size;
+        }
+
+        p {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    .projects-list {
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .project-thumbnail {
+            height: 50vh;
+            width: 25vw;
+            margin: 3vh 1vw;
+
+            h2 {
+                font-weight: 700;
+            }
+        }
     }
 }

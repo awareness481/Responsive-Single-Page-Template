@@ -12,6 +12,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+button {
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
 .page {
     height: 100vh;
 }

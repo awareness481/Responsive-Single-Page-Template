@@ -1,7 +1,7 @@
 .first {
     position: relative;
     top: 0;
-    background: url('https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=760&q=80');
+    background: url('https://images.unsplash.com/photo-1496681859237-6039cd585c4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ef7e8b75e16b3b804298af39ed376bd5&auto=format&fit=crop&w=750&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(to right, rgba(233,73,73, .8), rgba(240, 123, 13, 0.8));
+      background-image: linear-gradient(to right, rgba(233,73,73, .55), rgba(233,73,73, 0.8) 25%, rgba(240, 123, 13, 0.8));
       opacity: 1; 
     }
 }
@@ -31,14 +31,12 @@
 
     h2 {
       font-size: $l-size + $s-size;
+      font-weight: 400;
     }
 
     h4 {
       font-size: $m-size;
-    }
-
-    h2, h4 {
-      font-weight: 400;
+      font-weight: 200;
     }
 
     .email-form {
@@ -55,6 +53,8 @@
         width: 100%;
         padding-left: 25px;
       }
+      
+      .join {@include buttonHover()};
 
       .join {
         font-size: $m-size + .5rem;
@@ -66,6 +66,11 @@
         border-color: #f13977;
         color: white;
         display: inline-block;
+
+        &:hover {
+          background-color: $black;
+          border-color: $black;
+        }
 
         .join-text {
     

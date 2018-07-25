@@ -14,3 +14,13 @@ $red: #e94949;
 $lred: #f44542;
 $orange: #f07b0d;
 $gray: #7E7E7E;
+$black: #302e2e;
+
+// Button hover mixin
+
+@mixin buttonHover() {
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.01s;
+}

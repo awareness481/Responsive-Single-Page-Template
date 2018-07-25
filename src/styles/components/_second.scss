@@ -1,6 +1,5 @@
 .second {
     background-color: rgba(0,0,0, .06);
-    color: $gray;
 }
 
 .row {
@@ -13,7 +12,7 @@
 
         h3 {
             font-size: $l-size;
-            font-weight: 400;
+            font-weight: 200;
 
             .fa-mobile-alt, .fa-eye, .fa-rocket {
                 color: #F36363;
@@ -24,6 +23,7 @@
 
         p {
             font-size: $m-size;
+            color: $gray;
             margin: 2% 10% 5% 18%;
             width: 80%;
         }

@@ -1,4 +1,5 @@
 .clients {
+    margin-top: 5%;
     background: 
     /* top, transparent red, faked with gradient */
     /* Thank you css-tricks :) https://css-tricks.com/tinted-images-multiple-backgrounds/ */
@@ -10,6 +11,10 @@
     url('https://images.unsplash.com/photo-1464029902023-f42eba355bde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5aaa65793c7b9e05accddb9c5e98b668&auto=format&fit=crop&w=750&q=80');
     position: relative;
     height: 100%;
+
+    .clients-headline {
+        margin-top: 5%;
+    }
 
     .testimony-bg {
         background: #fff;
@@ -86,6 +91,7 @@
             font-size: $m-size + 0.3rem;
         }
         .author-job {
+            display: block;
             font-size: $m-size - 0.3rem;
         }
         .author-job, .website {

@@ -19,6 +19,7 @@
     }
 
     .get-in-touch{ @include red-button()};
+    .get-in-touch{ @include buttonHover()};
 
     .get-in-touch {
         display: block;
@@ -26,6 +27,11 @@
         width: 80%;
         padding: $s-size 0;
         margin: 10% auto;
+
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+        }
     }
 }
 

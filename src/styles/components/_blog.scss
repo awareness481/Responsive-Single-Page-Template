@@ -44,10 +44,16 @@
     }
 
     .read-more{ @include red-button()};
+    .read-more{ @include buttonHover()};
 
     .read-more {
         margin: 2% 0 10% 10%;
         padding: $s-size $l-size;
+
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+        }
     }
 
     .blog-article {

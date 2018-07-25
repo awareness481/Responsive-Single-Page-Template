@@ -28,3 +28,22 @@
         margin: 10% auto;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .get-started {
+        max-height: 65vh;
+
+        h2 {
+            margin-top: 5%;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        .get-in-touch {
+            margin: 4% auto 5% auto;
+            width: 25%;
+        }
+    }
+}

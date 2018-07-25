@@ -33,6 +33,7 @@
         p { @include paragraph($m-size + 1rem)  };
 
         a {
+            display: block;
             font-size: $m-size;
             color: $lred;
         }
@@ -41,5 +42,24 @@
             margin: 5% 0 0 5%;
         }
         
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        .list-container,
+        .footer-details {
+            flex: 1;
+            margin: 10% 3% 3% 3%;
+        }
+
+        .footer-details {
+            width: 35vw;
+        }
     }
 }

@@ -1,5 +1,6 @@
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import {animationTrigger} from './scripts/fadeIn'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-animationTrigger();
+AOS.init();

@@ -7,7 +7,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    visibility: hidden;
 
     .small-article {
         flex: 1;
@@ -30,30 +29,6 @@
         }
     }
 }
-
-@mixin animation-delay($time) {
-        
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: $time;
-    
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-          }
-        
-          to {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-}
-
-.fadeOne { @include animation-delay(0.4s) }
-.fadeTwo { @include animation-delay(0.7s) }
-.fadeThree { @include animation-delay(1s) }
 
 @media screen and (min-width: 768px) {
     .second {

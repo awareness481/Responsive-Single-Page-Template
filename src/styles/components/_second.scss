@@ -1,5 +1,6 @@
 .second {
     background-color: rgba(0,0,0, .06);
+    height: 100vh;
 }
 
 .row {
@@ -32,7 +33,7 @@
 
 @media screen and (min-width: 768px) {
     .second {
-        height: 80vh;
+        height: 70vh;
     }
 
     .row {

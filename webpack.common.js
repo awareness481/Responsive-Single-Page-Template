@@ -1,21 +1,30 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
+  target: 'web',
   node: {
     fs: 'empty'
   },
   output: {
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './public')
+    publicPath: '/public/'
   },
   module: {
     rules: [{
-      loader: 'babel-loader',
       test: /\.js$/,
-      exclude: /node_modules/
+      include: path.join(__dirname, 'src'),
+      exclude: [ /(node_modules|bower_components)/,
+                './src/server.js',
+                './src/srv-compiled.js'
+      ],
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['env']
+        }
+      }
    }]
   }
 }

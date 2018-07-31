@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "start": "npm run build && node src/srv-compiled.js",
-    "build": "webpack --config webpack.prod.js --progress --profile --colors && babel -o src/srv-compiled.js src/server.js --presets=env"
+    "start": "node srv-compiled.js",
+    "build": "webpack --config webpack.prod.js --progress --profile --colors && babel -o srv-compiled.js server.js --presets=env"
   },
   "author": "",
   "license": "ISC",

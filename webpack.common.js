@@ -37,9 +37,10 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
             "style-loader", // creates style nodes from JS strings
+            "resolve-url-loader",
             "css-loader", // translates CSS into CommonJS
             "sass-loader" // compiles Sass to CSS
         ],

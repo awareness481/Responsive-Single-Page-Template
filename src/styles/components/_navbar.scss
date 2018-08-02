@@ -180,7 +180,8 @@ header {
         a {
             border: 0 !important; /* Remove borders from off-canvas styling */
 
-            &:hover {
+            &:hover,
+            &:focus {
                 background-color:transparent;
                 text-decoration: none;
             }

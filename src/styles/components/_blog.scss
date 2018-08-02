@@ -9,7 +9,7 @@
 
     .blog-headline {
         position: relative;
-        margin-bottom: 10%;
+        margin-bottom: 50vh;
 
         h2 {
             position: relative;
@@ -27,12 +27,23 @@
     background-color: white;
 
     .article-image {
-        display: flex;
-        justify-content: center;
         max-width: 100%;
         margin: 0 auto;
-        height: auto;
+        height: 200px;
         overflow: hidden;
+        background-size: cover;
+    }
+
+    .image1 {
+        background: url('../../assets/laptop.jpg');
+    }
+
+    .image2 {
+        background: url('../../assets/car.jpg');
+    }
+
+    .image3 {
+        background: url('../../assets/grass.jpg');
     }
 
     .article-summary { @include paragraph($m-size + 1rem) };
@@ -103,7 +114,7 @@
         width: 100%;
 
         .blog-headline {
-            margin-bottom: 5%;
+            margin-bottom: 10vh;
 
             h2 {
                 font-size: $xl-size;
@@ -126,7 +137,6 @@
             margin: 10% 0 10% 0;
 
             .article-image {
-                display: inline-block;
                 max-width: 100%;
             }
 

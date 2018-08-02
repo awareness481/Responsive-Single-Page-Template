@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
@@ -12,11 +11,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/public/'
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.min.html'
-    })
-  ],
   module: {
     rules: [{
       test: /\.js$/,
@@ -31,16 +25,25 @@ module.exports = {
           presets: ['env']
         }
       }
-   }]
+    },]
   },
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          publicPath: '.'
+        }
+      },
+      {
         test: /\.scss$/,
         use: [
             "style-loader", // creates style nodes from JS strings
             "css-loader", // translates CSS into CommonJS
             "sass-loader" // compiles Sass to CSS
-        ]
-    }]
-  }
+        ],
+      }
+    ],
+  },
 }
